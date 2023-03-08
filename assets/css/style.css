@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;400&family=Roboto+Condensed&family=Roboto:wght@300&display=swap');
+
+:root {
+    /* --theme: #2b2c5b; */
+    --theme: #264c5b;
+    /* --theme: #625d65; */
+}
+
+* {
+    margin: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+
+body {
+    width: 100%;
+}
+
+.bold-text {
+    font-size: 20px;
+    font-weight: 650;
+}
+
+.text-center {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 90%;
+    margin: auto;
+}
+
+form {
+    max-width: 90%;
+    margin: auto;
+
+}
+
+.d-flex {
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.d-flex-c {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+#header {
+    padding: 20px;
+    text-align: center;
+    background-color: var(--theme);
+}
+
+#header .container a {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#main_site {
+    padding: 2rem;
+}
+
+#main_site .container .box-nav a {
+    margin: 20px 0;
+    font-size: 15px;
+    font-weight: 600;
+    /* color: rgb(151, 87, 181); */
+    color: var(--theme);
+    box-sizing: border-box;
+    padding: 10px 10px;
+    border-radius: 4px;
+    background-color: whitesmoke;
+    box-shadow: 1px 1px 20px rgb(193, 193, 193),
+        -5px -5px 10px rgb(251, 251, 251);
+    transition: 200ms;
+    /* border: 1px solid rgb(247, 247, 247); */
+}
+
+#main_site .container .box-nav a:hover {
+
+    background-color: var(--theme);
+    color: white;
+    box-shadow: 5px 5px 20px rgb(193, 193, 193),
+        -5px -5px 10px rgb(251, 251, 251);
+}
+
+.table {
+    border-spacing: unset;
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+
+.table thead tr {
+    background-color: var(--theme);
+    color: white;
+}
+
+.table td,
+.table th {
+    padding: 10px;
+    text-align: start;
+    border-top: 1px solid rgb(155, 155, 155);
+}
+
+.table tr:hover {
+    color: white;
+    background-color: var(--theme);
+}
+
+.table tr:hover td a {
+    color: white;
+}
+
+.table td a {
+    color: black;
+    margin: 0 5px;
+}
+
+/* RESPONSIVNESS */
+@media (max-width:1024px) {
+
+    th {
+        display: none;
+    }
+
+    tr {
+        margin: 20px;
+    }
+
+    .table td {
+        font-size: 18px;
+        width: 70%;
+        margin: auto;
+        display: block;
+        text-align: center;
+    }
+
+    #main_site .container .box-nav a {
+        font-size: 18px;
+
+        margin: 20px auto;
+    }
+}
+
+@media (max-width:630px) {
+
+    .table td {
+        width: 100%;
+        margin: auto;
+        display: block;
+        text-align: center;
+    }
+}
+
+
+
+/* ADD NEW USER */
+.form_title {
+    color: var(--theme);
+}
+
+.add_user_form {
+    width: 60%;
+    margin: auto;
+    padding: 15px;
+}
+
+
+.inline {
+    display: inline;
+}
+
+.add_user_form .new_user .form-group {
+    margin: 10px 0;
+    padding: 0 10px;
+}
+
+.add_user_form .new_user .form-group input {
+    margin: 5px 0;
+    width: 100%;
+    display: block;
+    padding: 10px 8px;
+    font-size: 15px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid gray;
+
+}
+
+.add_user_form .new_user .form-group .radio input[type="radio"] {
+    width: 10px;
+    display: inline;
+}
+.add_user_form .new_user .form-group .radio input[type="radio"]:focus{
+    background-color: var(--theme);
+}
+
+
+.add_user_form .new_user .form-group label[for="gender"]{
+    font-weight: 600;
+    
+}
+.add_user_form .new_user .form-group label[for="status"]{
+    font-weight: 600;
+}
+.add_user_form .new_user .form-group label {
+    display: inline-block;
+    width: 50px;
+    margin-right: 20px;
+}
+
+.add_user_form .new_user .form-group button {
+    width: 60%;
+    padding: 10px 10px;
+    font-size: 16px;
+    /* background-color: var(--theme); */
+    border: none;
+    color: black;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin: 10px 0;
+    font-weight: 600;
+    margin-left: 20%;
+}
+.add_user_form .new_user .form-group button:hover{
+    background-color: var(--theme);
+    color: white;
+}
+@media (max-width:730px) {
+    
+.add_user_form {
+    width: 100%;
+}
+
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%-include('partials/_head');%>
+</head>
+
+<body>
+    <!-- header -->
+    <%-include('partials/_header');%>
+        <!-- header end -->
+
+        <!-- main section -->
+        <div id="main_site">
+            <div class="container">
+                <div class="box-nav d-flex justify-between">
+                    <a href="/"><span> <i class="fa-solid fa-angles-left"></i> All User </i></span></a>
+                </div>
+            </div>
+
+            <div class="form_title text-center bold-text ">
+                <span>Add new user</span>
+            </div>
+            <!-- create user form -->
+            <%-include('partials/form');%>
+            <!-- create user form  end-->
+        </div>
+
+        <!-- main section end -->
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/js/index.js"></script>
+
+</html>

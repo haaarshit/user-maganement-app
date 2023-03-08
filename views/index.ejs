@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+
+    <%-include('partials/_head');%>
+</head>
+<body>
+    <!-- header -->
+     <%-include('partials/_header');%>
+    <!-- header end -->
+
+    <!-- main section -->
+    <div id="main_site">
+        <div class="container">
+            <div class="box-nav d-flex justify-between">
+                <a href="/add-user"><span> Add User <i class="fa-solid fa-user"></i></span></a>
+            </div>
+        </div>
+            <!-- form -->
+            <form action="/" method="POST">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>@mail</th>
+                            <th>Gender</th>
+                            <th>Status</th>
+                            <th>Edit/Remove</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- users list -->
+                        <%-include('partials/show');%>
+                    </tbody>
+                </table>
+            </form>
+    
+        </div>
+    <!-- main section end -->
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/js/index.js"></script>
+</html>
